@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <title>Library Management System</title>
+   <script src="Book.js"></script>
+   </head>
+<body>
+    <div  class="navbar" >
+ 
+ <a href="AddBooks.html">Add Books</a> 
+ 
+     <a href="DisplayBooks.html">View Books</a>
+     <a href="Contact.html">Contact Us</a>
+     
+        </div>
+    <div id="message"></div>   
+    
+    <table id="tblInsert" border="1" cellpadding="0" cellspacing="0" width ="80%" align="center">
+        <tr>
+            <td align="center" colspan="2" ><h2>Library Management System</h2></td>
+        </tr>
+        <tr>
+            <td align="left" width="30%"><label  title="Book :">Book :</label></td>
+            <td align="right" width="70%"> <input id="txtBookname" type="text"  size="100"  name="Book Name" placeholder="Enter Book Name" > </td>
+            </tr> 
+            <tr>
+            <td align="left"  width="30%"><label title="Author:">  Author: </label></td>
+            <td align="right" width="70%"> <input  id="txtAuthor" type="text" name="Author" width="100%" placeholder="Enter Author"  size="100" > </td>
+            </tr>
+            <tr>
+                <td align="left"   width="30%"> <label title="Library Branch:">Library Branch:</label> </td>
+                <td align="right" width="70%"> <input type="text" id="txtBranch" name="LBranch" placeholder="Enter Library Branch"  size="100" > </td>
+                </tr>
+            <tr>
+            <td align="left"  width="30%"><label title="Genre:">Genre:</label></td>
+            <td align="right" width="70%"> <input id="txtGenre" type="text" name="Genre"   size="100"  placeholder=" Enter Genre :"> </td>
+            </tr>
+            <tr>
+            <td align="left"  width="30%"> <label title="Publishing Company:">Publishing Company:</label> </td>
+            <td align="right"  width="70%"> <input id="txtPublish" type="text" name="Publishing" size="100" placeholder="Enter Publishing Company"> </td>
+            </tr>
+            <tr>            
+            <td colspan="2">
+            <button id="btnsubmit"  type="submit" value="submit" onclick="Insert()"  > Add</button>
+            <button  value="Reset" id="btnReset" onclick="Clear()" >  Reset </button>
+            </td>
+            </tr>
+    </table>    
+<div id="mytable"></div>
+        <h1>Your books</h1>
+        <table id="tableBody" border="1" width = "80%" align="center">         
+            <thead><tr><th>Book</th><th>Author</th><th>Library Branch</th><th>Genre</th><th>Publishing Company</th></tr></thead>    
+            <tbody></tbody>
+            
+        </table>
+    
+
+</body>
+</html>
+
+
+
+
+
+
+

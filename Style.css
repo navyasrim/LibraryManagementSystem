@@ -1,0 +1,112 @@
+*{
+ margin: 0 auto;
+  box-sizing:border-box;  
+  padding: 30%,10%; 
+}
+
+.navbar {
+  width: 80%;
+  background-color: #555;
+  overflow: auto;
+}
+
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  width: 30%; /* Four links of equal widths */
+  text-align: center;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+    width: 80%;
+    text-align: left;
+  }
+}
+body {
+    font-family: system-ui;
+    background: #f06d06;
+    color: white;
+    text-align: center;
+  }
+
+  .border_class {
+    border: 1px solid blue;
+    align-items: flex-end;
+
+  }
+  td {
+    border: 1px solid #333; 
+    border-collapse:collapse; 
+    
+    }
+    tr, th {
+      border: 1px solid #333;   
+      border-collapse:collapse; 
+      
+      
+      }
+      table {
+        border: 2px solid #333;    
+        position : center;
+        align-items: center;
+        align-content: center;
+        padding: 5;
+        border-collapse:collapse; 
+        width: 80%;
+        
+        
+        }
+        img{
+          width: 80%;
+        }
+       
+        header{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 30px 10%;
+        }
+        logo{
+          cursor: pointer;
+        }
+        .nav-links{
+
+          list-style: none;
+        }
+        .nav-links li{
+          align-content: flex-end;
+          display: inline-block;
+          padding: 0px 20px;
+        }
+   
+      div.myTable {
+        height: 10em;
+        position: relative;
+        border-collapse:collapse; 
+        padding-right: 70%;
+        width: 100%;
+        background-color: blue;
+        
+      }
+    div.myTable table {
+        margin: 0;
+        background:blue;
+        width: 100%;
+        position: absolute;
+        padding-right: 50%;
+        top: 50%;
+        border-collapse:collapse; 
+        left: 50%;
+        /* margin-right: -50%; */
+        transform: translate(-50%, -50%) }
